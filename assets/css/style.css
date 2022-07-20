@@ -119,6 +119,7 @@ header{
 .post_section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: fit-content;
     row-gap: 20px;
     column-gap: 20px;
 }
@@ -244,3 +245,65 @@ footer ul li:hover{
     color: var(--font-color);
 }
 /* ||Footer Css End|| */
+
+/*===================
+Match Section Start
+====================*/
+.flag_sec, .group_sec{
+    padding: 30px 20px;
+    text-align: center;
+}
+.flag_sec .flag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flag h4{
+    padding: 0 15px;
+}
+.mach_time{
+    padding-top: 20px;
+}
+.flag_sec h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--background-color);
+}
+.flag_sec p, .team_name p{
+    font-size: 16px;
+    color: var(--regular-font-color);
+}
+/*===================
+Match Section End
+====================*/
+
+/*===================
+Group Section Start
+====================*/
+.group_name h2{
+    color: var(--background-color);
+    font-size: 20px;
+    font-weight: 700;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 20px;
+}
+.group_name h2 span{
+    color: var(--fucas-color);
+    font-size: 25px;
+    font-weight: 700;
+}
+.group_name i{
+    padding: 0 10px 0 2px;
+}
+.team_name{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.name_list{
+    padding: 0 15px;
+}
+/*===================
+Group Section End
+====================*/
