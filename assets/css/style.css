@@ -15,9 +15,8 @@ a{
     text-decoration: none;
     display: inline-block;
 }
-
 .container{
-    max-width: 1200px;
+    width: 1250px;
     margin: 0 auto;
 }
 :root{
@@ -43,7 +42,7 @@ header{
 .head_text{
     width: 50%;
     color: var(--font-color);
-    padding: 150px 0;
+    padding: 130px 0;
 }
 .head_text h1{
     font-size: 50px;
@@ -82,3 +81,83 @@ header{
     top: 8px;
 }
 /* ||Header Css End|| */
+
+/* Main Css Start */
+#main_item{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+    padding: 50px 0;
+}
+.side_nev{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.side_nev a{
+    background-color: var(--font-color);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--background-color);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: var(--first-transition);
+}
+.side_nev a.fucas{
+    background-color: var(--fucas-color);
+    color: var(--font-color);
+}
+.side_nev a:hover{
+    background-color: var(--fucas-color);
+    color: var(--font-color);
+}
+
+.post_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.post_item{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.post_item img{
+    width: 100%;
+}
+.post_item .post_text{
+    padding: 10px 15px;
+}
+.post_text .btn{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--background-color);
+    padding: 8px 20px;
+    border: 1px solid var(--background-color);
+    border-radius: 8px;
+    transition: var(--first-transition);
+}
+.post_text h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--background-color);
+    padding: 15px 0;
+}
+.post_text .icone{
+    display: flex;
+}
+.post_text .icone p{
+    color: var(--regular-font-color);
+    padding-right: 25px;
+}
+.post_item:hover .btn{
+    background-color: var(--fucas-color);
+    border: 1px solid var(--fucas-color);
+    color: var(--font-color);
+}
+/* ||Main Css End|| */
