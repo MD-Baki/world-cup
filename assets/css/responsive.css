@@ -60,6 +60,10 @@
         margin-top: 20px;
     }
     /* ||Footer Css End|| */
+
+    .hide{
+        display: none;
+    }
 }
 /*Mobile dvice*/
 @media (max-width:600px){
