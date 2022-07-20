@@ -16,7 +16,7 @@ a{
     display: inline-block;
 }
 .container{
-    width: 1250px;
+    width: 1200px;
     margin: 0 auto;
 }
 :root{
@@ -93,6 +93,7 @@ header{
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
+    height: fit-content;
     padding: 15px 20px;
     border-radius: 10px;
     text-align: center;
@@ -126,6 +127,7 @@ header{
     border: 1px solid #E8E8E8;
     border-radius: 10px;
     overflow: hidden;
+    transition: var(--first-transition);
 }
 .post_item img{
     width: 100%;
@@ -155,9 +157,60 @@ header{
     color: var(--regular-font-color);
     padding-right: 25px;
 }
+.post_item:hover{
+    box-shadow: 5px 5px 10px #E8E8E8;
+}
 .post_item:hover .btn{
     background-color: var(--fucas-color);
     border: 1px solid var(--fucas-color);
     color: var(--font-color);
 }
 /* ||Main Css End|| */
+
+/* Footer Css Start */
+footer{
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 80px 100px;
+}
+footer h2{
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(255, 255, 255, 10%);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+footer ul li{
+    color: var(--regular-secendfont-color);
+    list-style: none;
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: var(--first-transition);
+}
+footer ul li:hover{
+    color: var(--fucas-color);
+}
+.footer_icone i{
+    color: var(--regular-secendfont-color);
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid var(--regular-secendfont-color);
+    border-radius: 50%;
+    margin: 0 8px;
+    margin-top: 40px;
+    transition: var(--first-transition);
+}
+.footer_icone i:hover{
+    background-color: var(--fucas-color);
+    border: 1px solid var(--fucas-color);
+    color: var(--font-color);
+    font-size: 20px
+}
+/* ||Footer Css End|| */
