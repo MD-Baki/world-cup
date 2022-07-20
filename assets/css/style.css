@@ -34,15 +34,15 @@ a{
 /* Header Css Start */
 header{
     background-color: var(--background-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     padding: 0 100px;
     overflow: hidden;
     border-radius: 20px;
 }
 .head_text{
-    width: 50%;
     color: var(--font-color);
-    padding: 130px 0;
 }
 .head_text h1{
     font-size: 50px;
@@ -73,7 +73,6 @@ header{
     padding-left: 5px;
 }
 .head_img{
-    width: 50%;
     text-align: right;
 }
 .head_img img{
@@ -165,6 +164,38 @@ header{
     border: 1px solid var(--fucas-color);
     color: var(--font-color);
 }
+
+/*view btn*/
+.view_btn{
+    display: none;
+    text-align: center;
+}
+.view_btn a{
+    color: var(--font-color);
+    font-size: 18px;
+    background-color: var(--fucas-color);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    position: relative;
+    transition: var(--first-transition);
+    z-index: 1;
+}
+.view_btn a::before{
+    position: absolute;
+    content: '';
+    background-color: var(--background-color);
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: var(--first-transition);
+    z-index: -1;
+}
+.view_btn a:hover::before{
+    width: 100%;
+}
 /* ||Main Css End|| */
 
 /* Footer Css Start */
@@ -184,7 +215,7 @@ footer h2{
 footer ul li{
     color: var(--regular-secendfont-color);
     list-style: none;
-    display: inline;
+    display: inline-block;
     font-size: 16px;
     font-weight: 500;
     padding: 0 25px;
@@ -211,6 +242,5 @@ footer ul li:hover{
     background-color: var(--fucas-color);
     border: 1px solid var(--fucas-color);
     color: var(--font-color);
-    font-size: 20px
 }
 /* ||Footer Css End|| */
