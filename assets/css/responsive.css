@@ -82,6 +82,13 @@
     .head_text h1{
         font-size: 40px;
     }
+    .head_text p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 350px;
+        margin: 0 auto;
+    }
     .head_img{
         text-align: center;
     }
